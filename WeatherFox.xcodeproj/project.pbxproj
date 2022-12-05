@@ -21,7 +21,9 @@
 		F84463DB29118A1D009F04BB /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84463DA29118A1D009F04BB /* WeatherRepository.swift */; };
 		F84463E02911A40C009F04BB /* ForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84463DF2911A40C009F04BB /* ForecastModel.swift */; };
 		F84463E22911B62E009F04BB /* HomeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84463E12911B62E009F04BB /* HomeVM.swift */; };
-		F84463E42911C375009F04BB /* TodayWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84463E32911C375009F04BB /* TodayWeatherView.swift */; };
+		F84463E42911C375009F04BB /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84463E32911C375009F04BB /* CurrentWeatherView.swift */; };
+		F8B8437D2935476B00DCE48B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B8437C2935476B00DCE48B /* AppConfig.swift */; };
+		F8B8438029354AB300DCE48B /* SharedAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B8437F29354AB300DCE48B /* SharedAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +62,9 @@
 		F84463DA29118A1D009F04BB /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
 		F84463DF2911A40C009F04BB /* ForecastModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastModel.swift; sourceTree = "<group>"; };
 		F84463E12911B62E009F04BB /* HomeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVM.swift; sourceTree = "<group>"; };
-		F84463E32911C375009F04BB /* TodayWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayWeatherView.swift; sourceTree = "<group>"; };
+		F84463E32911C375009F04BB /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
+		F8B8437C2935476B00DCE48B /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		F8B8437F29354AB300DCE48B /* SharedAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SharedAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +156,12 @@
 			isa = PBXGroup;
 			children = (
 				F84463A529116081009F04BB /* WeatherFoxApp.swift */,
+				F8B8437C2935476B00DCE48B /* AppConfig.swift */,
+				F84463E12911B62E009F04BB /* HomeVM.swift */,
 				F84463DC29118D97009F04BB /* Model */,
 				F84463D92911896A009F04BB /* Repositories */,
-				F84463E12911B62E009F04BB /* HomeVM.swift */,
-				F84463E32911C375009F04BB /* TodayWeatherView.swift */,
+				F84463E32911C375009F04BB /* CurrentWeatherView.swift */,
+				F8B8438129354DF400DCE48B /* Assets */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -183,6 +189,14 @@
 				F84463DF2911A40C009F04BB /* ForecastModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F8B8438129354DF400DCE48B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F8B8437F29354AB300DCE48B /* SharedAssets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F84463AD29116082009F04BB /* Preview Assets.xcassets in Resources */,
+				F8B8438029354AB300DCE48B /* SharedAssets.xcassets in Resources */,
 				F84463AA29116082009F04BB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,8 +332,9 @@
 			files = (
 				F83E451C2915AD74002CC9E3 /* WeatherService.swift in Sources */,
 				F84463DB29118A1D009F04BB /* WeatherRepository.swift in Sources */,
+				F8B8437D2935476B00DCE48B /* AppConfig.swift in Sources */,
 				F84463B229116082009F04BB /* WeatherFox.xcdatamodeld in Sources */,
-				F84463E42911C375009F04BB /* TodayWeatherView.swift in Sources */,
+				F84463E42911C375009F04BB /* CurrentWeatherView.swift in Sources */,
 				F84463AF29116082009F04BB /* Persistence.swift in Sources */,
 				F84463A829116081009F04BB /* ContentView.swift in Sources */,
 				F84463E22911B62E009F04BB /* HomeVM.swift in Sources */,

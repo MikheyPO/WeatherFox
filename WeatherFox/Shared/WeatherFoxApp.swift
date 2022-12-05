@@ -9,15 +9,10 @@ import SwiftUI
 
 @main
 struct WeatherFoxApp: App {
-//    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
             //check device
             PhoneHomeView()
-            
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
